@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+
+.name-content {
+  height: 60px;
+  background-color: #202329;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-header {
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-header > img {
+  width: 500px;
+  margin-right: 150px;
+}
+
+.header-description {
+  width: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* justify-content: center; */
+  margin-right: 150px;
+}
+
+.header-description > h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 27px;
+}
+
+.header-description > p {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+/* cards */
+
+.containerCards {
+  background-color: #202329;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: grid;
+  grid-template-columns: repeat(5, 4fr);
+}
+
+.cardContainer {
+  background: rgb(32, 35, 41);
+  /* height: 400px; */
+  margin: 20px;
+  border: 3px solid #a1c0ae;
+  border-radius: 15px;
+  color: rgb(158, 158, 158);
+}
+
+.cardImage > img {
+  width: 100%;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.cardStatus {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardStatus > p {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.pagination {
+  background: rgb(39, 42, 49);
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 20px;
+}
+
+.center {
+  text-align: center;
+  color: #d4d4d4;
+  font-size: 20px;
+}
+
+/* pages */
+
+.prevButton {
+  cursor: pointer;
+}
+
+.nextButton {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.pagination > p {
+  font-size: 24px;
 }
